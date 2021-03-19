@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.exe
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.deps.json
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.runtimeconfig.json
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.dll
+C:\Users\Administrator\Desktop\csProject04\bin\Debug\netcoreapp3.1\csProject04.pdb
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.dll
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.pdb
+C:\Users\Administrator\Desktop\csProject04\obj\Debug\netcoreapp3.1\csProject04.genruntimeconfig.cache
