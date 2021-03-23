@@ -1,9 +1,10 @@
 ﻿using System;
+using static ConsoleApp7.BaseUnit;
+using static ConsoleApp7.Animal;
 
 namespace ConsoleApp7
 {
-    using static BaseUnit;
-    using static Animal;
+
     class Program
     {
 
@@ -31,7 +32,7 @@ namespace ConsoleApp7
             //box1.number = 100;
             //Console.WriteLine(box3.number);
             //Console.WriteLine(box4.number);
-            #endregion 
+            #endregion
             #region
             /////////////////////////////////////////////////////////////////////////////////////
 
@@ -43,68 +44,93 @@ namespace ConsoleApp7
             //Console.WriteLine("이름 : {0}, 체력 : {1}/{2}", unit2.Name, unit2.Hp, unit2.MAX_HP);
 
             #endregion
+            #region 상속(animal)
             /////////////////////////////////////////////////////////////////////////////////////
             //상속
-            Dog[] dogArray = new Dog[5];
-            dogArray[0] = new Dog("dogA", 3.0f, 4);
-            dogArray[1] = new Dog("dogB", 3.0f, 4);
-            dogArray[2] = new Dog("dogC", 3.0f, 4);
+            //Dog[] dogArray = new Dog[5];
+            //dogArray[0] = new Dog("dogA", 3.0f, 4, "서울");
+            //dogArray[1] = new Dog("dogB", 3.0f, 4, "서울");
+            //dogArray[2] = new Dog("dogC", 3.0f, 4, "서울");
 
-            Cat[] catArray = new Cat[5];
-            catArray[0] = new Cat("catA", 3.0f, 4);
-            catArray[1] = new Cat("catB", 3.0f, 4);
-            catArray[2] = new Cat("catC", 3.0f, 4);
-            catArray[3] = new Cat("catD", 3.0f, 4);
-            catArray[4] = new Cat("catE", 3.0f, 4);
+            //Cat[] catArray = new Cat[5];
+            //catArray[0] = new Cat("catA", 3.0f, 4, "서울");
+            //catArray[1] = new Cat("catB", 3.0f, 4, "서울");
+            //catArray[2] = new Cat("catC", 3.0f, 4, "서울");
+            //catArray[3] = new Cat("catD", 3.0f, 4, "서울");
+            //catArray[4] = new Cat("catE", 3.0f, 4, "서울");
 
-            Animal[] animalArray = new Animal[8];
-            animalArray[0] = new Cat("catA", 3.0f, 4);
-            animalArray[1] = new Cat("catB", 3.0f, 4);
-            animalArray[2] = new Cat("catC", 3.0f, 4);
-            animalArray[3] = new Cat("catD", 3.0f, 4);
-            animalArray[4] = new Cat("catE", 3.0f, 4);
+            //Animal[] animalArray = new Animal[8];
+            //animalArray[0] = new Cat("catA", 3.0f, 4, "서울");
+            //animalArray[1] = new Cat("catB", 3.0f, 4, "서울");
+            //animalArray[2] = new Cat("catC", 3.0f, 4, "서울");
+            //animalArray[3] = new Cat("catD", 3.0f, 4, "서울");
+            //animalArray[4] = new Cat("catE", 3.0f, 4, "서울");
 
-            animalArray[5] = new Dog("dogA", 3.0f, 4);
-            animalArray[6] = new Dog("dogB", 3.0f, 4);
-            animalArray[7] = new Dog("dogC", 3.0f, 4);
-            //foreach (Cat cat in catArray)
+            //animalArray[5] = new Dog("dogA", 3.0f, 4, "서울");
+            //animalArray[6] = new Dog("dogB", 3.0f, 4, "서울");
+            //animalArray[7] = new Dog("dogC", 3.0f, 4, "서울");
+            ////foreach (Cat cat in catArray)
+            ////{
+            ////    Console.Write(cat.name);
+            ////    cat.Cry();
+            ////}
+            ////foreach(Dog dog in dogArray)
+            ////{
+            ////    dog.Cry();
+            ////}
+            //foreach (Animal animal in animalArray)
             //{
-            //    Console.Write(cat.name);
-            //    cat.Cry();
+            //    animal.Cry();
+            //    animal.Eat(Feed.CatFeed);
             //}
-            //foreach(Dog dog in dogArray)
-            //{
-            //    dog.Cry();
-            //}
-            foreach (Animal animal in animalArray)
+            #endregion
+
+            BaseUnit[] allUnits = new BaseUnit[3];
+            allUnits[0] = new Marine();
+            allUnits[1] = new Medic();
+            allUnits[2] = new Ghost();
+            foreach (BaseUnit unit in allUnits)
+                unit.ShowInfo();
+
+            BaseUnit[] allEnemys = new BaseUnit[3];
+            allEnemys[0] = new Marine();
+            allEnemys[1] = new Medic();
+            allEnemys[2] = new Ghost();
+
+            //allUnits[0].AttackedTo(allEnemys[2]);
+
+            while (true)
             {
-                animal.Cry();
-                animal.Eat(Feed.CatFeed);
+                Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
+                Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
+                Console.WriteLine("");
+                Console.Write("공격할  유닛 선택 : ");
+                string input = Console.ReadLine();
+
+                Console.Write("적 유닛 선택 : ");
+                string target = Console.ReadLine();
+
+                int myIndex = int.Parse(input) - 1;
+                int enemyIndex = int.Parse(target) - 1;
+
+                allUnits[myIndex].AttackedTo(allEnemys[enemyIndex]);
+
+                Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
+                Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
+                break;
             }
         }
-
-        static BaseUnit[] unitArray = new BaseUnit[10];
-        static void InitUnit()
+        static string GetAllUnitName(BaseUnit[] allUnits)
         {
-            unitArray[0] = new BaseUnit("마린", new UnitStatus(100, 0, 0));
-        }
-
-        static BaseUnit GetUnit(String name)
-        {
-            BaseUnit result = null;
-            int count = 0;
-            foreach(BaseUnit unit in unitArray)
+            string result = string.Empty;
+            for(int i =0; i<allUnits.Length; i++)
             {
-                if (unit == null)
-                    continue;
-                if(unit.Name == name)
-                {
-                    result = unit;
-                    break;
-                }
+                result += string.Format("{0}.{1}({2}/{3}) ", i + 1, allUnits[i].Name,allUnits[i].Hp, allUnits[i].MAX_HP);
+
             }
             return result;
         }
+      
     
     }
 }

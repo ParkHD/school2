@@ -11,22 +11,20 @@ namespace ConsoleApp7
     }
     class Animal
     {
-        public string name;
-        public float weight;
-        public int age;
-        int tall;
+        // public - 공개
+        // private - 비공개
+        // protected - 비공개지만 상속 받은 자식 클래스에게는 공개.
 
-        public int Tall
+        protected string name;
+        protected float weight;
+        protected int age;
+        private string birthPlace;
+
+        public Animal(string birthPlace)
         {
-            get
-            {
-                return tall;
-            }
-            set
-            {
-                tall = value;
-            }
+            this.birthPlace = birthPlace;
         }
+
         public virtual void Cry() { }
         public virtual void Eat(Feed feed)
         {
@@ -35,12 +33,12 @@ namespace ConsoleApp7
     }
     class Cat : Animal
     {
-        public Cat(string name, float weight, int age, int tall = 0)
+        public Cat(string name, float weight, int age, string birthPlace)
+            :base(birthPlace)
         {
             this.name = name;
             this.weight = weight;
             this.age = age;
-            Tall = tall;
         }
         public override void Cry()
         {
@@ -50,7 +48,8 @@ namespace ConsoleApp7
     }
     class Dog : Animal
     {
-        public Dog(string name, float weight, int age)
+        public Dog(string name, float weight, int age, string birthPlace)
+            :base(birthPlace)
         {
             this.name = name;
             this.weight = weight;
