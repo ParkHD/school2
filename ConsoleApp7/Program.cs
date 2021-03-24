@@ -17,7 +17,6 @@ namespace ConsoleApp7
         //    public int number;
         //}
 
-
         static void Main(string[] args)
         {
             #region 주석처리
@@ -101,36 +100,90 @@ namespace ConsoleApp7
 
             while (true)
             {
+                
                 Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
                 Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
                 Console.WriteLine("");
-                Console.Write("공격할  유닛 선택 : ");
-                string input = Console.ReadLine();
+                for(int i =0; i<allUnits.Length; i++)
+                {
+                    Console.Write("공격할  유닛 선택 : ");
+                    string input = Console.ReadLine();
 
-                Console.Write("적 유닛 선택 : ");
-                string target = Console.ReadLine();
+                    Console.Write("적 유닛 선택 : ");
+                    string target = Console.ReadLine();
 
-                int myIndex = int.Parse(input) - 1;
-                int enemyIndex = int.Parse(target) - 1;
+                    int myIndex = int.Parse(input) - 1;
+                    int enemyIndex = int.Parse(target) - 1;
 
-                allUnits[myIndex].AttackedTo(allEnemys[enemyIndex]);
+                    allUnits[myIndex].AttackedTo(allEnemys[enemyIndex]);
 
-                Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
-                Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
-                break;
+                    Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
+                    Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
+                }
+                // Console.Clear();
+                for (int i = 0; i < allEnemys.Length; i++)
+                {
+                    Console.Write("공격할 적군 유닛 선택 : ");
+                    string input = Console.ReadLine();
+
+
+                    Console.Write("아군 유닛 선택 : ");
+                    string target = Console.ReadLine();
+
+                    int enemyIndex = int.Parse(input) - 1;
+                    int myIndex = int.Parse(target) - 1;
+
+                    allEnemys[enemyIndex].AttackedTo(allUnits[myIndex]);
+
+                    Console.WriteLine("[아군] {0}", GetAllUnitName(allUnits));
+                    Console.WriteLine("[적군] {0}", GetAllUnitName(allEnemys));
+                }
+
             }
         }
         static string GetAllUnitName(BaseUnit[] allUnits)
         {
             string result = string.Empty;
-            for(int i =0; i<allUnits.Length; i++)
+           
+            for (int i =0; i<allUnits.Length; i++)
             {
-                result += string.Format("{0}.{1}({2}/{3}) ", i + 1, allUnits[i].Name,allUnits[i].Hp, allUnits[i].MAX_HP);
-
+                if (allUnits[i] != null)
+                {
+                    if (!allUnits[i].IsDead)
+                        result += string.Format("{0}.{1}({2}/{3}) ", i + 1, allUnits[i].Name, allUnits[i].Hp, allUnits[i].MAX_HP);
+                    else if (allUnits[i].IsDead)
+                    {
+                        result += string.Format("{0}.{1} die ", i + 1, allUnits[i].Name);
+                        allUnits[i] = null;
+                    }
+                }
             }
+     
             return result;
         }
       
-    
+        static void SetAllUnitAction(BaseUnit[] allunits)
+        {
+            for (int i=0; i<allunits.Length; i++)
+            {
+                BaseUnit unit = allunits[i];
+                
+                if (unit == null)
+                    continue;
+
+                unit.SetAction();
+            }
+        }
+        static bool IsEndTurn(BaseUnit[] allUnits)
+        {
+            foreach(BaseUnit unit in allUnits)
+            {
+                if (unit == null)
+                    continue;
+                if (unit.IsAction)
+                    return false;
+            }
+            return true;
+        }
     }
 }

@@ -45,6 +45,8 @@ namespace ConsoleApp7
         protected float moveSpeed;       // 이동속도
         protected float shieldDefence;   // 쉴드방어력
 
+        protected bool isdead;
+
         protected UnitStatus baseStatus;  // 기본능력치
         protected UnitStatus finalStatus; // 실 사용 능력치
         protected Weapon weapon;
@@ -69,12 +71,21 @@ namespace ConsoleApp7
                 {
                     getValue = MAX_HP;
                 }
-                if (getValue < 0)
+                if (getValue <= 0)
                 {
                     getValue = 0;
+                    isdead = true;
                 }
                 finalStatus.hp = getValue;
             }
+        }
+        public bool IsDead
+        {
+            get
+            {
+                return isdead;
+            }
+                
         }
         public int MAX_HP
         {
@@ -113,6 +124,19 @@ namespace ConsoleApp7
                 return weapon.power;
             }
         }
+
+        protected bool isAction;
+        public bool IsAction
+        {
+            get
+            {
+                return isAction;
+            }
+        }
+        public virtual void SetAction()
+        {
+            isAction = true;
+        }
         public abstract void ShowInfo();
         public virtual void AttackedTo(BaseUnit target)
         {
@@ -132,13 +156,16 @@ namespace ConsoleApp7
             name = "마린";
             baseStatus = new UnitStatus(100, 0, 0);
             finalStatus = baseStatus;
-            weapon = new Weapon("가스총", 3.5f, 5.5f, 5);
+            weapon = new Weapon("가스총", 3.5f, 5.5f, 50);
         }
         public override void ShowInfo()
         {
-            Console.WriteLine("============");
-            Console.WriteLine("이름 : {0} \n체력 : {1}/{2}", name, Hp, MAX_HP);
-            Console.WriteLine("============");
+            if (!isdead)
+            {
+                Console.WriteLine("============");
+                Console.WriteLine("이름 : {0} \n체력 : {1}/{2}", name, Hp, MAX_HP);
+                Console.WriteLine("============");
+            }
         }
     }
     class Medic : BaseUnit
@@ -146,20 +173,26 @@ namespace ConsoleApp7
         public Medic()
         {
             name = "매딕";
-            baseStatus = new UnitStatus(100, 100, 0);
+            baseStatus = new UnitStatus(50, 100, 0);
             finalStatus = baseStatus;
         }   
         public override void ShowInfo()
         {
-            Console.WriteLine("============");
-            Console.WriteLine("이름 : {0} \n체력 : {1}/{2} \n마나 : {3}/{4}", name, Hp, MAX_HP, Mp, MAX_MP);
-            Console.WriteLine("============");
+            if (!isdead)
+            {
+                Console.WriteLine("============");
+                Console.WriteLine("이름 : {0} \n체력 : {1}/{2} \n마나 : {3}/{4}", name, Hp, MAX_HP, Mp, MAX_MP);
+                Console.WriteLine("============");
+            }
         }
         public override void AttackedTo(BaseUnit target)
         {
             Console.WriteLine("매딕은 공격할 수 없습니다.");
         }
-
+        public override void SetAction()
+        {
+            isAction = false;
+        }
     }
     class Ghost : BaseUnit
     {
@@ -172,9 +205,12 @@ namespace ConsoleApp7
         }
         public override void ShowInfo()
         {
-            Console.WriteLine("============");
-            Console.WriteLine("이름 : {0} \n체력 : {1}/{2} \n마나 : {3}/{4}", name, Hp, MAX_HP, Mp, MAX_MP);
-            Console.WriteLine("============");
+            if (!isdead)
+            {
+                Console.WriteLine("============");
+                Console.WriteLine("이름 : {0} \n체력 : {1}/{2} \n마나 : {3}/{4}", name, Hp, MAX_HP, Mp, MAX_MP);
+                Console.WriteLine("============");
+            }
         }
     }
 }
