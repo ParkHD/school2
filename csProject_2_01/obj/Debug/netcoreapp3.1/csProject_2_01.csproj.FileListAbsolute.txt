@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.exe
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.deps.json
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.runtimeconfig.json
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.dll
+C:\Users\Administrator\Desktop\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.pdb
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.dll
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.pdb
+C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.genruntimeconfig.cache
