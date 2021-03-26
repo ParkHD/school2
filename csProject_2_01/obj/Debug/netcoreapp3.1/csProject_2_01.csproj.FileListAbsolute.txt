@@ -11,3 +11,16 @@ C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_
 C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.dll
 C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.pdb
 C:\Users\Administrator\Desktop\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.genruntimeconfig.cache
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.exe
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.deps.json
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.runtimeconfig.json
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.runtimeconfig.dev.json
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.dll
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\bin\Debug\netcoreapp3.1\csProject_2_01.pdb
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.csprojAssemblyReference.cache
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.AssemblyInfoInputs.cache
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.AssemblyInfo.cs
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.csproj.CoreCompileInputs.cache
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.dll
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.pdb
+C:\Users\guseh\OneDrive\바탕 화면\csProject_2_04\csProject_2_01\obj\Debug\netcoreapp3.1\csProject_2_01.genruntimeconfig.cache

@@ -169,19 +169,19 @@ namespace csProject_2_01
             // 내가 생존해 있지 않을 경우.
             if(!IsAlive)
             {
-                Console.WriteLine("{0}은 죽어있어서 행동할 수 없습니다.", name);
+                Program.actionText = string.Format("{0}은 죽어있어서 행동할 수 없습니다.", name);
                 return;
             }
             // 내가 행동을 이미 했다면(false) 실행하지 않는다.
             if (!IsAction)
             {
-                Console.WriteLine("{0}은 이미 행동 했습니다.", name);
+                Program.actionText = string.Format("{0}은 이미 행동 했습니다.", name);
                 return;
             }
             // 공격 대상이 생존해있지 않다면.
             if(!target.IsAlive)
             {
-                Console.WriteLine("{0}은 죽어있어서 공격할 수 없습니다.", target.name);
+                Program.actionText = string.Format("{0}은 죽어있어서 공격할 수 없습니다.", target.name);
                 return;
             }
 
@@ -194,10 +194,22 @@ namespace csProject_2_01
         protected void TakeDamaged(BaseUnit attacker)
         {
             Hp -= attacker.weapon.power;
-
-            Console.WriteLine("{0} >> {1} >> {2}({3}/{4})를 공격", attacker.name, attacker.weapon.power,
+            Program.actionText = string.Format("{0} >> {1} >> {2}({3}/{4})를 공격", attacker.name, attacker.weapon.power,
                 name, Hp, MAX_HP);
         }
+
+        public virtual void HealTo(BaseUnit target)
+        {
+            Program.actionText = string.Format("{0}은 회복기능이 없다,", name);
+        }
+        public void TakeHeal(int power)
+        {
+            Hp += power;
+            Program.actionText = string.Format("{0}은 {1}의 HP를 회복했습니다. ({2}/{3})", name, power, Hp, MAX_HP);
+        }
+        public abstract void ShowAction();
+        public abstract void DoAction(int actionindex, BattleClass attacker, BattleClass target);
+        public abstract void DoAction(BattleClass attacker, BattleClass target);
     }
 
     class Marine : BaseUnit
@@ -220,7 +232,33 @@ namespace csProject_2_01
             Console.WriteLine("체력:{0}/{1}", Hp, MAX_HP);
             Console.WriteLine("================");
         }
-
+        public override void ShowAction()
+        {
+            Console.WriteLine("1.공격, 2.스팀팩");
+        }
+        public override void DoAction(int actionindex, BattleClass attacker, BattleClass target)
+        {
+            switch (actionindex)
+            {
+                case 0:
+                    {
+                        Console.Write("공격 대상을 선택해 주세요 : ");
+                        int targetIndex = Program.InputIndex();
+                        AttackedTo(target.GetUnit(targetIndex));
+                        break;
+                    }
+                case 1:
+                    {
+                        Program.actionText = string.Format("아직 스팀팩이 연구되지 않았습니다.");
+                        break;
+                    }
+            }
+        }
+        public override void DoAction(BattleClass attacker, BattleClass target)
+        {
+            int index = new Random().Next(0, 2);
+            DoAction(index, attacker, target);
+        }
     }
 
     class Medic : BaseUnit
@@ -234,7 +272,7 @@ namespace csProject_2_01
 
         public override void SetAction()
         {
-            isAction = false;
+            isAction = true;
         }
 
         public override void ShowInfo()
@@ -244,9 +282,45 @@ namespace csProject_2_01
             Console.WriteLine("체력:{0}/{1}, 마나:{2}/{3}", Hp, MAX_HP, MP, MAX_MP);
             Console.WriteLine("================");
         }
+        public override void ShowAction()
+        {
+            Console.WriteLine("1.회복");
+        }
         public override void AttackedTo(BaseUnit target)
         {
-            Console.WriteLine("{0}은 공격할 수 없습니다.", name);
+            Program.actionText = string.Format("{0}은 공격할 수 없습니다.", name);
+        }
+        public override void HealTo(BaseUnit target)
+        {
+            if (!IsAlive)
+            {
+                Console.WriteLine("{0}은 죽어있어서 행동할 수 없습니다.", name);
+                return;
+            }
+            if(target.Hp >target.MAX_HP)
+            {
+                Program.actionText = string.Format("{0}은 이미 최대 체력입니다.:", target.Name);
+            }
+            target.TakeHeal(50);
+            isAction = false;
+        }
+        public override void DoAction(int actionindex, BattleClass attacker, BattleClass target)
+        {
+            switch (actionindex)
+            {
+                case 0:
+                    {
+                        Console.Write("회복할 아군을 선택해 주세요 : ");
+                        int targetIndex = Program.InputIndex();
+                        HealTo(attacker.GetUnit(targetIndex));
+                        break;
+                    }
+            }
+        }
+        public override void DoAction(BattleClass attacker, BattleClass target)
+        {
+            
+            DoAction(0, attacker, target);
         }
     }
 
@@ -267,6 +341,37 @@ namespace csProject_2_01
             Console.WriteLine("이름 : {0}", name);
             Console.WriteLine("체력:{0}/{1}, 마나:{2}/{3}", Hp, MAX_HP, MP, MAX_MP);
             Console.WriteLine("================");
+        }
+        public override void ShowAction()
+        {
+            Console.WriteLine("1.공격, 2.저격, 3.핵");
+        }
+        public override void DoAction(int actionindex, BattleClass attacker, BattleClass target)
+        {
+            switch (actionindex)
+            {
+                case 0:
+                    {
+                        Console.Write("공격 대상을 선택해 주세요 : ");
+                        int targetIndex = Program.InputIndex();
+                        AttackedTo(target.GetUnit(targetIndex));
+                        break;
+                    }
+                case 1:
+                    {
+                        Program.actionText = string.Format("아직 저격이 연구되지 않았습니다.");
+                        break;
+                    }
+                case 2:
+                    {
+                        Program.actionText = string.Format("아직 핵이 연구되지 않았습니다.");
+                        break;
+                    }
+            }
+        }
+        public override void DoAction(BattleClass attacker, BattleClass target)
+        {
+            DoAction(new Random().Next(0,3), attacker, target);
         }
     }
 }

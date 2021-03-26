@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\csProject_2_01\\csProject_2_01.csproj": {}
+    "C:\\Users\\guseh\\OneDrive\\바탕 화면\\csProject_2_04\\csProject_2_01\\csProject_2_01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\csProject_2_01\\csProject_2_01.csproj": {
+    "C:\\Users\\guseh\\OneDrive\\바탕 화면\\csProject_2_04\\csProject_2_01\\csProject_2_01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\csProject_2_01\\csProject_2_01.csproj",
+        "projectUniqueName": "C:\\Users\\guseh\\OneDrive\\바탕 화면\\csProject_2_04\\csProject_2_01\\csProject_2_01.csproj",
         "projectName": "csProject_2_01",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\csProject_2_01\\csProject_2_01.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\csProject_2_01\\obj\\",
+        "projectPath": "C:\\Users\\guseh\\OneDrive\\바탕 화면\\csProject_2_04\\csProject_2_01\\csProject_2_01.csproj",
+        "packagesPath": "C:\\Users\\guseh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guseh\\OneDrive\\바탕 화면\\csProject_2_04\\csProject_2_01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guseh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
