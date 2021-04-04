@@ -1,0 +1,13 @@
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.exe
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.deps.json
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.runtimeconfig.json
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.runtimeconfig.dev.json
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.dll
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\bin\Debug\netcoreapp3.1\InterfacePractice0404.pdb
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.csprojAssemblyReference.cache
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.AssemblyInfoInputs.cache
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.AssemblyInfo.cs
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.csproj.CoreCompileInputs.cache
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.dll
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.pdb
+C:\Users\guseh\source\repos\InterfacePractice0404\InterfacePractice0404\obj\Debug\netcoreapp3.1\InterfacePractice0404.genruntimeconfig.cache
