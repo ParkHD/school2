@@ -53,5 +53,9 @@ namespace ConsoleApp6
         {
             inventory.Open();
         }
+        public void GetItem(Item item)
+        {
+            inventory.GetItem(item);
+        }
     }
 }

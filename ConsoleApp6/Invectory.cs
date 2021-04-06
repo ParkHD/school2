@@ -26,6 +26,7 @@ namespace ConsoleApp6
         private void ShowInventory()
         {
             Console.Clear();
+
             Console.WriteLine("[인벤토리]");
             Console.WriteLine("[{0}/{1}]", curWeight, maxWeight);
             Console.WriteLine("---------------------------");
@@ -82,7 +83,29 @@ namespace ConsoleApp6
                 return;
             
             Item item = itemList[index];
+            curWeight -= item.Weight * item.Count;
             itemList.RemoveAt(index);
         }
+        public void GetItem(Item item)
+        {
+            if(curWeight+ item.Weight * item.Count > maxWeight)
+            {
+                Console.WriteLine();
+                Console.WriteLine("---------------------------");
+                Console.WriteLine("가방이 꽉찼습니다!!");
+                Console.WriteLine("---------------------------");
+                System.Threading.Thread.Sleep(750);
+                return;
+            }
+            itemList.Add(item);
+            curWeight += item.Weight * item.Count;
+            Console.WriteLine();
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("{0}을 얻었습니다.", item.Name);
+            Console.WriteLine("---------------------------");
+            System.Threading.Thread.Sleep(500);
+        }
+
+
     }
 }

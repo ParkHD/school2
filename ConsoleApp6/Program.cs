@@ -9,6 +9,12 @@ namespace ConsoleApp6
         {
             bool isOpen = true;
             Player player = new Player("Marine", 100);
+            Database database = new Database();
+
+            Random random = new Random();
+            int itemIndex = 0;
+            
+            Item item;
 
             while(isOpen)
             {
@@ -21,6 +27,11 @@ namespace ConsoleApp6
                         break;
                     case ConsoleKey.I:
                         player.ShowInventory();
+                        break;
+                    case ConsoleKey.C:
+                        itemIndex = random.Next(0, 12);
+                        item = database.GetRandomItem(itemIndex);
+                        player.GetItem(item);
                         break;
                 }
                 

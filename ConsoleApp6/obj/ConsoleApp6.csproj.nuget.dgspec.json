@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj": {}
+    "C:\\Users\\guseh\\Downloads\\school2-main\\ConsoleApp6\\ConsoleApp6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj": {
+    "C:\\Users\\guseh\\Downloads\\school2-main\\ConsoleApp6\\ConsoleApp6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
+        "projectUniqueName": "C:\\Users\\guseh\\Downloads\\school2-main\\ConsoleApp6\\ConsoleApp6.csproj",
         "projectName": "ConsoleApp6",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\ConsoleApp6\\obj\\",
+        "projectPath": "C:\\Users\\guseh\\Downloads\\school2-main\\ConsoleApp6\\ConsoleApp6.csproj",
+        "packagesPath": "C:\\Users\\guseh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guseh\\Downloads\\school2-main\\ConsoleApp6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guseh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
