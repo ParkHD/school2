@@ -1,0 +1,13 @@
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.exe
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.deps.json
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.runtimeconfig.json
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.runtimeconfig.dev.json
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.dll
+C:\Users\guseh\source\repos\Programmers\Programmers\bin\Debug\netcoreapp3.1\Programmers.pdb
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.csprojAssemblyReference.cache
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.AssemblyInfoInputs.cache
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.AssemblyInfo.cs
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.csproj.CoreCompileInputs.cache
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.dll
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.pdb
+C:\Users\guseh\source\repos\Programmers\Programmers\obj\Debug\netcoreapp3.1\Programmers.genruntimeconfig.cache
