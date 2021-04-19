@@ -1,59 +1,46 @@
 ﻿using System;
-//using static csProject04.UnitData;
+
 namespace csProject04
 {
-    using static UnitData;
+    
+
     class Program
     {
-        static Unit[] unitArray = new Unit[10];
-        static void Main(string[] args)
+        static int GetTabNumber(string command)
         {
-            Initunit();
+            // 만약에 입력된 값이 Tap 1이라면...?
+            int tabNumber = 0;
 
-            Unit unit1 = GetUnit(Unit.UnitKind.Marine, "마린1");
-           
-            Unit enemy1 = GetUnit(Unit.UnitKind.Ultra, "울트라1");
-            Unit enemy2 = GetUnit(Unit.UnitKind.Ultra, "울트라2");
-
-            enemy1.TakeDamage(unit1);
-
-            enemy1.ShowInfo();
-            enemy2.ShowInfo();
-
-            enemy1.Heal(10);
-            unit1.TakeDamage(enemy1);
-
-            unit1.ShowInfo();
-            enemy1.ShowInfo();
-            enemy2.ShowInfo();
-        }
-
-        static void Initunit()
-        {
-            unitArray[0] = new Unit("Marine", 80, 0.2f, 2, Unit.UnitKind.Marine);
-            unitArray[1] = new Unit("Ultra", 150, 0.3f, 15, Unit.UnitKind.Ultra);
-            unitArray[2] = new Unit("Zergling", 50, 0.5f, 5, Unit.UnitKind.Zergling);
-        }
-        static Unit GetUnit(Unit.UnitKind unitKind, string name = "")
-        {
-            Unit unit = null;
-            
-            for(int i =0; i<unitArray.Length; i++)
+            bool isContains = command.Contains("tab"); // 해당 문자열이 포함되어 있는가?
+            if (isContains)
             {
-                if(unitArray[i] == null)
-                    continue;
-                if (unitArray[i].IsKind(unitKind))
+                //int indexOf = command.IndexOf("tab");
+                //Console.WriteLine(indexOf);
+                string[] split = command.Split(' '); // char형 인자를 기준으로 문자를 나눈다.
+
+                try
                 {
-                    unit = new Unit(unitArray[i], name);
-                    Console.WriteLine("{0}[{1}]가 생성되었습니다.", unit.Name, unitKind);
-                    break;
+                    // try를 쓰는 이유는 잘못 입력했을 경우도 있다.
+                    tabNumber = int.Parse(split[1]); // tab_이후의 문자형태 숫자를 -> 숫자.
+                }
+                catch
+                {
+                    tabNumber = 0;
                 }
             }
-            return unit;
+
+            return tabNumber;
         }
-        //static Unit GetUnit(Unit.UnitKind unitKind, string name)
-        //{
-        //    return GetUnit(unitKind, "");
-        //}
+
+        static void Main(string[] args)
+        {
+            WebBrowser browser = new WebBrowser();
+            while(true)
+            {
+                browser.ShowWeb();
+                browser.Input();
+
+            }
+        }
     }
 }
