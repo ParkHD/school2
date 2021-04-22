@@ -1,0 +1,13 @@
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.exe
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.deps.json
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.runtimeconfig.json
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.dll
+C:\Users\Administrator\source\repos\ConsoleApp0422\bin\Debug\netcoreapp3.1\ConsoleApp0422.pdb
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.dll
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.pdb
+C:\Users\Administrator\source\repos\ConsoleApp0422\obj\Debug\netcoreapp3.1\ConsoleApp0422.genruntimeconfig.cache
