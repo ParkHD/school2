@@ -1,0 +1,13 @@
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.exe
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.deps.json
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.runtimeconfig.json
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.runtimeconfig.dev.json
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.dll
+C:\Users\guseh\source\repos\sort\sort\bin\Debug\netcoreapp3.1\sort.pdb
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.csprojAssemblyReference.cache
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.AssemblyInfoInputs.cache
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.AssemblyInfo.cs
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.csproj.CoreCompileInputs.cache
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.dll
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.pdb
+C:\Users\guseh\source\repos\sort\sort\obj\Debug\netcoreapp3.1\sort.genruntimeconfig.cache
