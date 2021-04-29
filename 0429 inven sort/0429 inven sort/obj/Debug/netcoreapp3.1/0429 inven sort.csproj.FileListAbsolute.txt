@@ -1,0 +1,13 @@
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.exe
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.deps.json
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.runtimeconfig.json
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.runtimeconfig.dev.json
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.dll
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\bin\Debug\netcoreapp3.1\0429 inven sort.pdb
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.csprojAssemblyReference.cache
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.AssemblyInfoInputs.cache
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.AssemblyInfo.cs
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.csproj.CoreCompileInputs.cache
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.dll
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.pdb
+C:\Users\guseh\source\repos\0429 inven sort\0429 inven sort\obj\Debug\netcoreapp3.1\0429 inven sort.genruntimeconfig.cache
