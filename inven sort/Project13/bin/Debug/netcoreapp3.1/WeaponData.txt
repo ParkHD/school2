@@ -1,0 +1,19 @@
+번호	이름	직업	부위	등급	공격력	방어력	체력
+0	차원의 대검	Warrior	Weapon	Rare	100	15	50
+1	신념의 대검	Warrior	Weapon	Rare	100	15	50
+2	염원의 대검	Warrior	Weapon	Rare	100	15	50
+3	황혼의 대검	Warrior	Weapon	Hero	300	30	200
+4	노을의 대검	Warrior	Weapon	Hero	300	30	200
+5	저녁의 대검	Warrior	Weapon	Hero	300	30	200
+6	결단의 대검	Warrior	Weapon	Legend	500	50	300
+7	맹세의 대검	Warrior	Weapon	Legend	500	50	300
+8	선택의 대검	Warrior	Weapon	Legend	500	50	300
+9	차원의 스태프	Wizard	Weapon	Rare	130	20	10
+10	신념의 스태프	Wizard	Weapon	Rare	130	20	10
+11	염원의 스태트	Wizard	Weapon	Rare	130	20	10
+12	황혼의 스태프	Wizard	Weapon	Hero	350	25	80
+13	노을의 스태프	Wizard	Weapon	Hero	350	25	80
+14	저녁의 스태프	Wizard	Weapon	Hero	350	25	80
+15	마수의 스태프	Wizard	Weapon	Legend	600	30	120
+16	결단의 스태프	Wizard	Weapon	Legend	600	30	120
+17	속삭임 스태프	Wizard	Weapon	Legend	600	30	120
