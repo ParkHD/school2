@@ -95,7 +95,7 @@ public static class Method
                 }
             }
 
-            Console.WriteLine("버블 정렬 {0}회 : {1}", cycle, array.ToStringArray());
+            
         }
     }
     public static void BubbleSort<T>(this List<T> array, bool isAscending = true)
@@ -157,22 +157,156 @@ public static class Method
 
     public static void InsertionSort<T>(this T[] array, bool isAscending = true) where T :ISort
     {
-        for(int i = 1;i<array.Length ;i++)
-        {
-            for(int j = i - 1;j>0;j--)
+       for(int i = 1; i < array.Length;i++)
+       {
+            T current = array[i];
+            for(int j = i - 1; j >= 0;j--)
             {
-                if (array[j] == null)
+                if (current == null)
                     break;
-                int target = array[j - 1].GetSort();
-                int current = array[j].GetSort();
-
-                if (target > current)
+                T target = array[j];
+                if(current.GetSort() < target.GetSort())
                 {
-                    Swap(ref array[j - 1], ref array[j]);
+                    array[j+1] = target;
+                    if (j == 0)
+                        array[j] = current;
                 }
                 else
+                {
+                    array[j + 1] = current;
                     break;
+                }
             }
+       }
+
+    }
+    public static void ShellSort<T>(this T[] array, bool isAscending = true)
+        where T : ISort, IName
+    {
+        for (int gap = array.Length / 2; gap > 0; gap /= 2) 
+        {
+            if ((gap % 2) == 0)
+                gap += 1;
+            for(int i = gap;i<array.Length;i++)
+            {
+                T orgin = array[i];
+                for (int j = i - gap; j >= 0; j -= gap)
+                {
+                    T target = array[j];
+
+                    if(orgin.GetSort() < target.GetSort())
+                    {
+                        array[j + gap] = target;
+                    }
+                    else
+                    {
+                        array[j + gap] = orgin;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    public static void MergeSort<T>(this T[] array, bool isAscending = true)
+        where T : ISort
+    {
+        int midLength = array.Length / 2;
+
+        T[] left = new T[midLength];
+        T[] right = new T[array.Length - midLength];
+
+        int index = 0;
+        for(int i = 0; i<left.Length;i++)
+        {
+            left[i] = array[index++];
+        }
+        for(int i = 0; i<right.Length;i++)
+        {
+            right[i] = array[index++];
+        }
+
+        if(left.Length > 1)
+        {
+            left.MergeSort(isAscending);
+        }
+        if(right.Length >1)
+        {
+            right.MergeSort(isAscending);
+        }
+
+        int leftIndex = 0;
+        int rightIndex = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if(leftIndex >= left.Length)
+            {
+                array[i] = right[rightIndex];
+                rightIndex++;
+                continue;
+            }
+            if (rightIndex >= left.Length)
+            {
+                array[i] = right[leftIndex];
+                leftIndex++;
+                continue;
+            }
+            if (left[leftIndex].GetSort() < right[rightIndex].GetSort())
+            {
+                array[i] = left[leftIndex];
+                leftIndex++;
+            }
+            else
+            {
+                array[i] = right[rightIndex];
+                rightIndex++;
+            }
+        }
+    }
+
+    public static void QuickSort<T>(this T[] array, bool isAscending = true)
+        where T : ISort
+    {
+        QuickSort(array, 0, array.Length - 1, isAscending);
+    }
+    static int Partition<T>(T[] array, int start, int end, bool isAscending)
+        where T : ISort
+    {
+        int pivot = array[(start + end) / 2].GetSort(); // 중간값
+        while (true)
+        {
+            if (end < start)
+                break;
+            if (array[start].GetSort() < pivot)
+            {
+                start++;
+                continue;
+            }
+            if (array[end].GetSort() > pivot)
+            {
+                end--;
+                continue;
+            }
+
+            T temp = array[start];
+            array[start] = array[end];
+            array[start] = temp;
+            start++;
+            end--;
+
+        }
+        return start;
+    }
+    static void QuickSort<T>(T[] array, int start, int end, bool isAscending)
+        where T : ISort
+    {
+        int pivot = Partition(array, start, end, isAscending);
+        if (start < pivot - 1)                           // 왼쪽값이 하나남을 때까지
+        {
+            QuickSort(array, start, pivot - 1, isAscending);
+        }
+        if (pivot < end)                                 // 오른쪽값이 하나 남을때 까지
+        {
+            QuickSort(array, pivot, end, isAscending);
         }
     }
     public static void Shuffle<T>(this List<T> list, int count = 100)
