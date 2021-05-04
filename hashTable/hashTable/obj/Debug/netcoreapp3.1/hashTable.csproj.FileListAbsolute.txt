@@ -1,0 +1,13 @@
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.exe
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.deps.json
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.runtimeconfig.json
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.runtimeconfig.dev.json
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.dll
+C:\Users\guseh\source\repos\hashTable\hashTable\bin\Debug\netcoreapp3.1\hashTable.pdb
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.csprojAssemblyReference.cache
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.AssemblyInfoInputs.cache
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.AssemblyInfo.cs
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.csproj.CoreCompileInputs.cache
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.dll
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.pdb
+C:\Users\guseh\source\repos\hashTable\hashTable\obj\Debug\netcoreapp3.1\hashTable.genruntimeconfig.cache
