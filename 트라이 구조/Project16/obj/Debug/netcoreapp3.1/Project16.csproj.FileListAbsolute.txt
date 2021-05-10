@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.exe
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.deps.json
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.runtimeconfig.json
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.dll
+C:\Users\Administrator\Desktop\Project16\bin\Debug\netcoreapp3.1\Project16.pdb
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.dll
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.pdb
+C:\Users\Administrator\Desktop\Project16\obj\Debug\netcoreapp3.1\Project16.genruntimeconfig.cache
