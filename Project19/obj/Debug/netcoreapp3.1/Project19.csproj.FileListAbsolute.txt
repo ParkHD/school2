@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.exe
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.deps.json
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.runtimeconfig.json
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.dll
+C:\Users\Administrator\Desktop\Project19\bin\Debug\netcoreapp3.1\Project19.pdb
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.dll
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.pdb
+C:\Users\Administrator\Desktop\Project19\obj\Debug\netcoreapp3.1\Project19.genruntimeconfig.cache
